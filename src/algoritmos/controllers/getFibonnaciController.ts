@@ -11,7 +11,7 @@ export class GetFibonnaciController {
 
 		const GetFibonnaciService = new getFibonnaciService()
 
-		const fibonnaci = GetFibonnaciService.handle(num)
+		const fibonnaci = GetFibonnaciService.execute(num)
 
 		return response.json(fibonnaci)
 	}

@@ -1,8 +1,8 @@
 export class getFibonnaciService {
-	handle(num: number): number[] {
+	execute(num: number): number[] {
 		const result = []
 		
-		for (let i = 0; num >= i; i++) {
+		for (let i = 0; i <= num; i++) {
 			if(i === 0 || i === 1) {
 				result.push(i)
 			} else {
