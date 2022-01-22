@@ -1,14 +1,5 @@
-interface IProductVality {
-	date: Date,
-	vality: string
-}
-
-function addDays(date: Date, days: number) {
-	date = new Date(date)
-	date.setDate(date.getDate() + days)
-
-	return date
-  }
+import { IProductVality } from '../../interfaces/IProductVality'
+import { addDays } from '../../utils/addDaysToDate'
 
 export class checkValityService {
 	execute(productVality: IProductVality): boolean {

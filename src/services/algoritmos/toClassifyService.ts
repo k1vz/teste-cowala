@@ -1,24 +1,8 @@
-interface IList {
-	souEu: boolean,
-	responsavel: boolean,
-	nome: string
-}
-
-function sort(e: string[]): string[] {
-	return e.sort(function(a, b) {
-		const nameA = a.toUpperCase()
-		const nameB = b.toUpperCase()
-
-		if (nameA < nameB) return -1
-
-		if (nameA > nameB) return 1
-
-		return 0
-	})
-}
+import { IPersonList } from '../../interfaces/IPersonList'
+import { sort } from '../../utils/sortPeopleAlphabetically'
 
 export class toClassifyService {
-	execute(list: IList[]): string[] {
+	execute(list: IPersonList[]): string[] {
 		const lists = {
 			myName: '',
 			responsible: [],
