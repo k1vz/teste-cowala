@@ -11,7 +11,7 @@ const toClassifyController = new ToClassifyController()
 const toCleanController = new ToCleanController()
 const checkValityController = new CheckValityController()
 
-router.get('/algoritmos/fibonnaci', getFibonnaciController.handle)
+router.post('/algoritmos/fibonnaci', getFibonnaciController.handle)
 router.post('/algoritmos/classificador', toClassifyController.handle)
 router.post('/algoritmos/faxina', toCleanController.handle)
 router.post('/algoritmos/validade', checkValityController.handle)
