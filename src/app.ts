@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express'
 import { router } from './routes'
 
 const app = express()
+const port = 4000
 
 app.use(express.json())
 app.use(router)
@@ -18,6 +19,6 @@ app.use((err: Error, request: Request, response: Response) => {
 	})
 })
 
-app.listen(4000, () => {
-	console.log('Server running on port 4000')
+app.listen(port, () => {
+	console.log(`Server running on port ${port}`)
 })

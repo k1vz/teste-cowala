@@ -18,22 +18,24 @@ function sort(e: string[]): string[] {
 }
 
 export class toClassifyService {
-	execute(list: IList[]): Object[] {
-		const responsibleList = []
-		const unresponsibleList = []
-		let myName = ''
-
-		for (let i of list) {
-			if (i.souEu) {
-				myName = i.nome
-			}
-			
-			if (i.responsavel) responsibleList.push(i.nome)
-
-			if (!i.responsavel) unresponsibleList.push(i.nome)
+	execute(list: IList[]): string[] {
+		const lists = {
+			myName: '',
+			responsible: [],
+			unresponsible: []
 		}
 
-		const classifiedList = [myName].concat(sort(responsibleList).concat(sort(unresponsibleList)))
+		for (let person of list) {
+			if (person.souEu) {
+				lists.myName = person.nome
+			}
+			
+			if (person.responsavel) lists.responsible.push(person.nome)
+
+			if (!person.responsavel) lists.unresponsible.push(person.nome)
+		}
+
+		const classifiedList = [lists.myName].concat(sort(lists.responsible).concat(sort(lists.unresponsible)))
 
 		return classifiedList
 	}

@@ -1,8 +1,8 @@
 import { Router } from 'express'
-import { GetFibonnaciController } from './src/algoritmos/controllers/getFibonnaciController'
-import { ToClassifyController } from './src/algoritmos/controllers/toClassifyController'
-import { ToCleanController } from './src/algoritmos/controllers/toCleanController'
-import { CheckValityController } from './src/algoritmos/controllers/checkValityController'
+import { GetFibonnaciController } from './controllers/algoritmos/getFibonnaciController'
+import { ToClassifyController } from './controllers/algoritmos/toClassifyController'
+import { ToCleanController } from './controllers/algoritmos/toCleanController'
+import { CheckValityController } from './controllers/algoritmos/checkValityController'
 
 export const router = Router()
 
