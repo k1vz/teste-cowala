@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { checkValityService } from '../services/checkValityService'
+import { checkValityService } from '../../services/algoritmos/checkValityService'
 
 export class CheckValityController {
 	handle(request: Request, response: Response) {

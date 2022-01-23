@@ -2,11 +2,11 @@
   "name": "teste-cowala",
   "version": "1.0.0",
   "description": "This project is an assessment for Cowala",
-  "main": "app.ts",
+  "main": "./src/app.ts",
   "author": "k1vz",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --exit-child ./app.ts"
+    "dev": "ts-node-dev --exit-child ./src/app.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",

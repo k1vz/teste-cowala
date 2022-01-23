@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { getFibonnaciService } from '../services/getFibonnaciService'
+import { getFibonnaciService } from '../../services/algoritmos/getFibonnaciService'
 
 interface IProps {
 	num: number

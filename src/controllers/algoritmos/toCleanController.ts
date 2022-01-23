@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { toCleanService } from '../services/toCleanService'
+import { toCleanService } from '../../services/algoritmos/toCleanService'
 
 export class ToCleanController {
 	handle(request: Request, response: Response) {
