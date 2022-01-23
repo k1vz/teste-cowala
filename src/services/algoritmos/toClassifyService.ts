@@ -12,6 +12,8 @@ export class toClassifyService {
 		for (let person of list) {
 			if (person.souEu) {
 				lists.myName = person.nome
+
+				continue
 			}
 			
 			if (person.responsavel) lists.responsible.push(person.nome)
