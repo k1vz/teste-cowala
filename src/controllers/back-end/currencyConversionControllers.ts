@@ -8,9 +8,9 @@ export class CurrencyConversionControllers {
 
 		const CurrencyConversionServices = new currencyConversionServices()
 
-		await CurrencyConversionServices.createCurrencyConversion(currencyConversion)
+		const conversion = await CurrencyConversionServices.createCurrencyConversion(currencyConversion)
 
-		return response.json(`Status 200: Done!`)
+		return response.json(conversion)
 	}
 
 	async readAllConversions(request: Request, response: Response) {
