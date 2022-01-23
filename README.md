@@ -1,7 +1,7 @@
 <h1 align='center'>:koala: Cowala Assessment</h1>
 
 <p align='center'>
-<a href='#about'>About</a> &nbsp; | &nbsp; <a href='#technologies'>Technologies</a> &nbsp; | &nbsp; <a href='#how-to-use'>How to use</a> | &nbsp; <a href='#routes-tables'>Routes tables</>
+<a href='#about'>About</a> &nbsp; | &nbsp; <a href='#technologies'>Technologies</a> &nbsp; | &nbsp; <a href='#how-to-use'>How to use</a> &nbsp; | &nbsp; <a href='#routes-tables'>Routes tables</>
 </p>
 
 <h2 id='about'>:memo: About</h2>
