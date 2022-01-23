@@ -1,5 +1,6 @@
-export interface IMarketItem {
-	id: number,
+import { IId } from './IId'
+
+export interface IMarketItem extends IId {
 	item?: string,
 	preco: number
 }

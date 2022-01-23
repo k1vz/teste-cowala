@@ -10,15 +10,15 @@ export class toClassifyService {
 		}
 
 		for (let person of list) {
-			if (person.souEu) {
+			if(person.souEu) {
 				lists.myName = person.nome
 
 				continue
 			}
 			
-			if (person.responsavel) lists.responsible.push(person.nome)
+			if(person.responsavel) lists.responsible.push(person.nome)
 
-			if (!person.responsavel) lists.unresponsible.push(person.nome)
+			if(!person.responsavel) lists.unresponsible.push(person.nome)
 		}
 
 		const classifiedList = [lists.myName].concat(sort(lists.responsible).concat(sort(lists.unresponsible)))

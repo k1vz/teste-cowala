@@ -1,5 +1,6 @@
-export interface ICurrencyConversion {
-	id: number,
+import { IId } from './IId'
+
+export interface ICurrencyConversion extends IId {
 	moedaOriginal: string,
 	moedaDaConversao: string,
 	valorEnviado: number,

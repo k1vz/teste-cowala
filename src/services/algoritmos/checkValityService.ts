@@ -7,7 +7,7 @@ export class checkValityService {
 		
 		productVality.date = addDays(productVality.date, parseInt(productVality.vality))
 
-		if (productVality.date.getTime() > currentDate.getTime()) return true
+		if(productVality.date.getTime() > currentDate.getTime()) return true
 
 		return false
 	}
