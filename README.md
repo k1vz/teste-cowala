@@ -1,7 +1,22 @@
+	
+<h3>Back-end</h3>
+	
+Request | Method | Belongs to | Route URI | Body | Response
+--- | --- | --- | --- | --- | ---
+Create item in list | POST | Mercado | /back-end/mercado/create | { <br> "id": number, <br> "item": string, <br> "preco": number <br> } | "Status 200: Done!"
+Read all items | GET | Mercado | /back-end/mercado/readAllItems | --- | [ <br> &nbsp; { <br> &nbsp; "id": number, <br> &nbsp; "item": string, <br> &nbsp; "preco": number <br> &nbsp; } <br> ]
+Read only | POST | Mercado | /back-end/mercado/readOnly | { <br> "id": number <br> } | { <br> "id": number, <br> "item": string, <br> "preco": number <br> }
+Update price | POST | Mercado | /back-end/mercado/update | { <br> "id": number, <br> "preco": number <br> } | "Status 200: Done!"
+Delete item | POST | Mercado | /back-end/mercado/delete | { <br> "id": number <br> } | "Status 200: Done!"
+--- | --- | --- | --- | --- | ---
+Create conversion | POST | Conversão <br> de Moedas | /back-end/conversao/create | { <br> "id": number, <br> "moedaOriginal": string, <br> "moedaDeConversao": string, "valorEnviado": number <br> } | { <br> "id": number, <br> "moedaOriginal": string, <br> "moedaDeConversao": string, "valorEnviado": number, <br> "valorConvertido": number <br> }
+	
+</div>
+
 <h1 align='center'>:koala: Cowala Assessment</h1>
 
 <p align='center'>
-<a href='#about'>About</a> &nbsp; | &nbsp; <a href='#technologies'>Technologies</a> &nbsp; | &nbsp; <a href='#how-to-use'>How to use</a>
+<a href='#about'>About</a> &nbsp; | &nbsp; <a href='#technologies'>Technologies</a> &nbsp; | &nbsp; <a href='#how-to-use'>How to use</a> | &nbsp; <a href='#routes-tables'>Routes tables</>
 </p>
 
 <h2 id='about'>:memo: About</h2>
@@ -46,3 +61,20 @@ Run in develop mode (fastest way)
 ```jsx
 yarn dev
 ```
+
+<h2 id='routes-tables'>:evergreen_tree: Routes tables</h2>
+
+<div align='center'>
+	
+<h3>Algorithms</h3>
+	
+Request | Method | Route URI | Body | Response
+--- | --- | --- | --- | ---
+Fibonnaci <br> (fibonnaci.js) | POST | /algoritmos/fibonnaci | { <br> "num": number <br> } | number[]
+Classifier <br> (classificador.js) | POST | /algoritmos/classificador | { <br> "souEu": boolean, <br> "responsavel": boolean, <br> "nome": string <br> } | string[]
+Cleaner <br> (faxina.js) | POST | /algoritmos/faxina |  { <br> string: string <br> OR <br> string: null <br> } | { <br> string: string <br> }
+Check Vality <br> (validade.js) | POST | /algoritmos/validade | { <br> "date": Date, <br> "vality": string <br> } | boolean
+	
+</div>
+	
+
