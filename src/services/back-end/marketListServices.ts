@@ -1,3 +1,4 @@
+import { IId } from '../../interfaces/IId'
 import { IMarketItem, IMarketList } from '../../interfaces/IMarket'
 import { marketList } from '../../repositories/marketRepository'
 
@@ -11,7 +12,7 @@ export class marketListServices {
 		return marketList
 	}
 
-	async readOnly({ id }: IMarketItem): Promise<IMarketItem> {
+	async readOnly({ id }: IId): Promise<IMarketItem> {
 		const index = marketList.findIndex(item => item.id === id)
 		const marketItem = marketList[index]
 
@@ -27,7 +28,7 @@ export class marketListServices {
 		return marketList
 	}
 
-	async deleteItem({ id }: IMarketItem): Promise<void> {
+	async deleteItem({ id }: IId): Promise<void> {
 		const index = marketList.findIndex(item => item.id === id)
 
 		if(index > 0 || index === 0) {
