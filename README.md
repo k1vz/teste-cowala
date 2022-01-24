@@ -59,6 +59,7 @@ Fibonnaci <br> (fibonnaci.js) | POST | /algoritmos/fibonnaci | { <br> "num": num
 Classifier <br> (classificador.js) | POST | /algoritmos/classificador | { <br> "souEu": boolean, <br> "responsavel": boolean, <br> "nome": string <br> } | string[]
 Cleaner <br> (faxina.js) | POST | /algoritmos/faxina |  { <br> string: string <br> OR <br> string: null <br> } | { <br> string: string <br> }
 Check Vality <br> (validade.js) | POST | /algoritmos/validade | { <br> "date": Date, <br> "vality": string <br> } | boolean
+Create Frame <br> (moldura.js) | POST | /algoritmos/moldura | { <br> "height": number, <br> "width": number <br> } | ---
 	
 	
 <h3>Back-end</h3>
